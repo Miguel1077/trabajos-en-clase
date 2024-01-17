@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de turismo</title>
+</head>
+
+<body>
+    <table  align="center">
+        <caption>Planes de Turismo</caption>
+        <form>
+            <tr>
+                <td>
+                    <label for="fullname">Nombre Completo</label>
+                </td>
+                <td>
+                    <input 
+                        type="text"  
+                        id="fullname"
+                        autocomplete="on" 
+                        size="30" 
+                        name="fullname" 
+                        placeholder="Ingrese Nombre Completo"
+                        maxlength="30" 
+                        minlength="7" 
+                        pattern="[A-Za-záéíóúÁÉÍÓÚüÜñÑ\s]+"
+                        title="Ingrese solo letras y/o espacios, minimo 7, maximo 30"
+                        required>
+                </td>
+            </tr>
+        
+       
+            <tr>
+                <td>
+                    <label for="email">Correo Electronico</label>
+                </td>
+            
+                <td>
+                    <input 
+                        name="email" id="email"
+                        placeholder="Ingrese Correo Electronico" 
+                        maxlength="50"
+                        size="30" 
+                        minlength="7"
+                        pattern="[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-]([\.]?[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-])+@[a-zA-Z0-9]([^@&%$\/\(\)=?¿!\.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?" 
+                        required
+                        title="Ingrese Caracteres Validos para el Correo">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="target">Destino</label>
+                </td>
+                <td>
+                    <select name="target" id="target">
+                        <option 
+                        value="none"
+                        selected
+                        disabled
+                        >Seleccione un Destino
+                        </option>
+                        <option 
+                        value="santamarta"
+                        >
+                        Santa marta
+                        </option>
+                        <option value="cartagena"
+                        >
+                        Cartagena
+                    </option>
+                    <option 
+                        value="medellin"
+                    >
+                        Medellin
+                    </option>
+                    <option 
+                        value="rioacha"
+                        >
+                        Rioacha
+                    </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label 
+                    for="departuredate"
+                    >Fecha salida
+                </label>
+                </td>
+                <td>
+                    <input 
+                    type="date"
+                     name="departuredate" 
+                     id="departuredate"
+                     min="2024-01-17"
+                     max="2024-01-31">
+                </td>
+            </tr>
+            <tr>
+            <td>
+                <label 
+                for="departuredate"
+                >Fecha Regreso
+            </label>
+            </td>
+            <td>
+                <input 
+                type="date"
+                 name="departuredate" 
+                 id="departuredate"
+                 min="2024-01-17"
+                 max="2024-01-31">
+            </td>
+            </tr>
+            <tr>
+                <td><label for="numberofpeople">Numero de personas</label></td>
+                <td>
+                    <input 
+                    type="number" 
+                    name="numberofpeople" 
+                    id="numberofpeople"
+                    min="1"
+                    max="10"
+                    size="30"
+                    required>
+                </td>
+                <tr>
+                    <td>
+                        <label for="waytopay">Forma de pago</label>
+                    </td>
+                    <td>
+                        <input 
+                        type="radio" 
+                        name="waytopay" 
+                        id="cash">Efectivo
+                        <br>
+                        <input 
+                        type="radio" 
+                        name="waytopay" 
+                        id="debitcard">Tarjeta Debito
+                        <br>
+                        <input 
+                        type="radio" 
+                        name="waytopay" 
+                        id="creditcard">Tarjeta Credito
+                    </td>
+                </tr>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <button 
+                    type="submit" 
+                    id="send"
+                    name="send"
+                    >
+                    enviar
+                    </button>
+                
+                 
+                    <button
+                    type="reset"
+                    id="reset"
+                    name="reset"
+                    >
+                   Limpiar
+                </button>
+                </td>
+            </tr>
+        
+        </form>
+    </table>
+</body>
+
+</html>
